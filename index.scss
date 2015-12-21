@@ -5,8 +5,8 @@
 $footer-font-size: 12px;
 
 .nib-footer {
-  @include py(4);
-  @include px(2);
+  @include py(2);
+  @include px(1);
 
   background-color: hsl(0, 0%, 21%);
   background-image: linear-gradient(to bottom, hsl(0, 0%, 21%) 0, hsl(0, 0%, 27%) 40%);
@@ -14,6 +14,11 @@ $footer-font-size: 12px;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: $footer-font-size;
   font-weight: 400;
+
+  @include breakpoint('sm') {
+    @include py(4);
+    @include px(2);
+  }
 }
 
 .nib-footer__body {

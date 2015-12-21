@@ -1,9 +1,18 @@
 {
   "name": "@nib-styles/footer-small",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "@nib-styles/sass-breakpoints": "^1.0.2",
     "@nib-styles/sass-grid": "^0.3.0",
     "@nib-styles/sass-spacing": "^1.0.0"
-  }
+  },
+  "description": "Styles for small nib footer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nib-styles/footer-small.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nib-styles/footer-small/issues"
+  },
+  "homepage": "https://github.com/nib-styles/footer-small#readme"
 }
