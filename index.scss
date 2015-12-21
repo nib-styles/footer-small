@@ -5,7 +5,7 @@
 $footer-font-size: 12px;
 
 .nib-footer {
-  @include py(2);
+  @include py(3);
   @include px(1);
 
   background-color: hsl(0, 0%, 21%);
