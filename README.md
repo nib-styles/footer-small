@@ -9,7 +9,7 @@ Styles for small nib footer
 ## Usage
 
 `index.scss`
-
-    @import "@nib-styles/footer-small";
-    
+```scss
+@import "@nib-styles/footer-small";
+```
 > Note: Requires use of `sass-composer` to bundle dependencies.
