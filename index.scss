@@ -1,6 +1,7 @@
 @import "@nib-styles/sass-grid";
 @import "@nib-styles/sass-breakpoints";
 @import "@nib-styles/sass-spacing";
+@import "@nib-styles/v2-icons";
 
 $footer-font-size: 12px;
 
@@ -30,25 +31,14 @@ $footer-font-size: 12px;
   @include grid();
 }
 
-.nib-footer__copyright-text,
-.nib-footer__copyright-links {
-
-  @include grid__unit();
-
-  @include breakpoint('xs') {
-    @include grid__unit--cols(12);
-
-    text-align: center;
-  }
-  @include breakpoint('lg') {
-    @include grid__unit--cols(6);
-  }
-}
-
 .nib-footer__copyright-text {
+  @include grid__unit();
   @include px(4);
+  text-align: center;
+  color: hsl(0, 0%, 60%);
+  line-height: 18px;
 
-  @include breakpoint('lg') {
+  @include breakpoint('xl') {
     @include grid__unit--cols(5);
     @include px(0);
 
@@ -57,13 +47,15 @@ $footer-font-size: 12px;
 }
 
 .nib-footer__copyright-links {
+  @include grid__unit();
+  text-align: center;
 
   @include breakpoint('xs') {
     @include grid__unit--order-first();
     @include mb(2);
   }
 
-  @include breakpoint('lg') {
+  @include breakpoint('xl') {
     @include grid__unit--order-last();
     @include grid__unit--cols(7);
     @include grid--halign-right();
@@ -86,6 +78,7 @@ $footer-font-size: 12px;
   color: hsl(0, 0%, 60%);
   border-left: 1px solid hsl(0, 0%, 40%);
   text-decoration: none;
+  line-height: 2;
 
   @include breakpoint('lg') {
     @include px(2);
@@ -101,7 +94,12 @@ $footer-font-size: 12px;
   }
 }
 
-// =================================================
+.nib-footer__copyright-link--phone-number {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+  // =================================================
 // Set grid__units back to desired font-size in <IE9
 // =================================================
 
