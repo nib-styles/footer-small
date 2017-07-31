@@ -1,9 +1,9 @@
 {
   "name": "@nib-styles/footer-small",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "@nib-styles/sass-breakpoints": "^1.0.2",
-    "@nib-styles/sass-grid": "^0.3.0",
+    "@nib-styles/sass-grid": "^1.0.1",
     "@nib-styles/sass-spacing": "^1.0.0",
     "@nib-styles/v2-icons": "^2.8.0"
   },
